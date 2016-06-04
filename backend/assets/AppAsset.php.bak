@@ -1,0 +1,32 @@
+<?php
+
+namespace backend\assets;
+
+use yii\web\AssetBundle;
+
+/**
+ * Main backend application asset bundle.
+ */
+class AppAsset extends AssetBundle
+{
+    public $basePath = '@webroot';
+    public $baseUrl = '@web';
+    public $css = [
+	'a/bootstrap/css/bootstrap.min.css',
+
+	'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css',  
+	'https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css',
+    'a/dist/css/AdminLTE.min.css',
+    'a/dist/css/skins/skin-blue.min.css',
+	'a/bootstrap/css/site.css',
+    ];
+    public $js = [
+	'a/plugins/jQuery/jQuery-2.2.0.min.js',
+	'a/bootstrap/js/bootstrap.min.js',
+	'a/dist/js/app.min.js',
+    ];
+    public $depends = [
+        'yii\web\YiiAsset',
+         'yii\bootstrap\BootstrapAsset',
+    ];
+}
